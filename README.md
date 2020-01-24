@@ -1,2 +1,3 @@
-# core-interaction
-class site
+## core-interaction
+- Class site for my Spring 2020 work.
+---
