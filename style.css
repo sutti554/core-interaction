@@ -1,4 +1,5 @@
 body {
+    background-color: greenyellow;
     margin: 0px;
     padding: 0px;
 }
@@ -8,8 +9,8 @@ header {
     background-color: rgb(255, 101, 160);
     display: flex;
     flex-direction: column;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 11vh;
+    font-family: 'Eater', cursive;
+    font-size: 10vh;
     height: 20vh;
     justify-content: center;
     text-align: center;
@@ -17,8 +18,8 @@ header {
 }
 
 div {
-    font-family: 'Lexend Mega', sans-serif;
-    font-size: 5vh;
+    font-family: 'Anton', sans-serif;
+    font-size: 6vh;
 }
 
 #wrapper {
@@ -26,17 +27,17 @@ div {
 }
 
 .classheader {
-    color: rgb(209, 208, 208);
-    padding: 40px 0px 0px 50px;
+    color: white;
+    padding: 40px 0px 0px 70px;
 }
 
 .weekheader {
-    color: rgb(189, 185, 185);
-    padding: 0px 0px 0px 50px;
+    color: white;
+    padding: 0px 0px 0px 100px;
 }
 
 a {
-    color: rgb(122, 122, 122);
+    color: rgb(255, 136, 0);
     text-decoration: none;
 }
 
