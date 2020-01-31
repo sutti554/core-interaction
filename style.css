@@ -1,57 +1,56 @@
 body {
-    background-color: yellow;
-    margin: 0px;
-    padding: 0px;
+  background-color: yellow;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-    align-items: center;
-    background-color: rgb(255, 101, 160);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Eater', cursive;
-    font-size: 10vh;
-    height: 20vh;
-    justify-content: center;
-    text-align: center;
-    vertical-align: middle;
+  align-items: center;
+  background-color: rgb(255, 101, 160);
+  display: flex;
+  flex-direction: column;
+  font-family: "Eater", cursive;
+  font-size: 10vh;
+  height: 20vh;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
 }
 
 div {
-    font-family: 'Anton', sans-serif;
-    font-size: 6vh;
+  font-family: "Anton", sans-serif;
+  font-size: 6vh;
 }
 
 #wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .classheader {
-    color: black;
-    padding: 40px 0px 0px 150px;
+  color: black;
+  padding: 40px 0px 0px 150px;
 }
 
 .weekheader {
-    color: rgb(0, 204, 255);
-    padding: 0px 0px 0px 100px;
+  color: rgb(0, 204, 255);
+  padding: 0px 0px 0px 100px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: black;
+  color: black;
 }
 
 #studio {
-    float: left;
+  float: left;
 }
 
 #lab {
-    float: right;
-    padding: 40px 500px 0px 0px;
-    overflow: hidden;
+  float: right;
+  padding: 40px 500px 0px 0px;
+  overflow: hidden;
 }
-
