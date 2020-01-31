@@ -1,24 +1,50 @@
 body {
-
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
+    background-color: rgb(255, 101, 160);
     font-family: 'Work Sans', sans-serif;
+    font-size: 11vh;
+    text-align: center;
 }
 
 div {
     font-family: 'Lexend Mega', sans-serif;
+    font-size: 5vh;
+}
+
+#wrapper {
+    overflow: hidden;
 }
 
 .classheader {
     color: rgb(209, 208, 208);
+    padding: 50px 0px 0px 30px;
 }
 
 .weekheader {
     color: rgb(189, 185, 185);
+    padding: 0px 0px 0px 30px;
 }
 
 a {
-    color: ;
+    color: rgb(122, 122, 122);
     text-decoration: none;
 }
+
+a:hover {
+    color: black;
+}
+
+#studio {
+    float: left;
+}
+
+#lab {
+    float: right;
+    padding: 50px 500px 0px 0px;
+    overflow: hidden;
+}
+
