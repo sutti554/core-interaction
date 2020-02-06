@@ -1,0 +1,71 @@
+body {
+  background-color: cyan;
+}
+
+#zero {
+  background-color: rgb(0, 0, 204);
+  height: 40px;
+  width: 500px;
+}
+
+#one {
+  background-color: rgb(174, 235, 53);
+  height: 20px;
+  width: 20px;
+}
+
+#two {
+  background-color: rgb(238, 252, 47);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#three {
+  background-color: rgb(187, 245, 27);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#four {
+  background-color: rgb(185, 224, 46);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#five {
+  background-color: rgba(255, 252, 50, 0.897);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#six {
+  background-color: rgb(153, 230, 82);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#seven {
+  background-color: rgb(120, 224, 89);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#eight {
+  background-color: rgb(224, 212, 46);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
+
+#nine {
+  background-color: rgba(61, 224, 46, 0.699);
+  margin: 0px 0px 0px 50px;
+  height: 20px;
+  width: 20px;
+}
