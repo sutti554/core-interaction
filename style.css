@@ -45,7 +45,9 @@ a:hover {
   margin-top: 30px;
   width: 30%;
 }
-
+.flex {
+  display: flex;
+}
 #lab {
   float: left;
   margin-left: 100px;
