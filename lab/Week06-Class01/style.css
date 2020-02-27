@@ -1,0 +1,111 @@
+#one {
+  height: 50px;
+  width: 50px;
+  background-color: fuchsia;
+  transform: scale(1);
+}
+
+#one:hover {
+  background-color: black;
+  transform: scale(0.1);
+  transition: all ease-in-out 6s;
+}
+
+#two {
+  height: 50px;
+  width: 50px;
+  transform: rotate(0deg);
+  background-color: blueviolet;
+}
+
+#two:hover {
+  transform: rotate(360deg);
+  background-color: black;
+  transition: all ease-in-out 6s;
+}
+
+#three {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(36, 53, 206);
+  transform: translateX(0);
+}
+
+#three:hover {
+  transform: translateX(200px);
+  background-color: black;
+  transition: all ease-in-out 6s;
+}
+
+#four {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(35, 192, 145);
+  transform: skew(0deg);
+}
+
+#four:hover {
+  transform: skew(15deg);
+  background-color: black;
+  transition: all ease-in-out 3s;
+}
+
+#five {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(177, 225, 65);
+  transform: skew(0deg);
+}
+
+#five:hover {
+  transform: skew(-15deg);
+  background-color: black;
+  transition: all ease-in-out 3s;
+}
+
+#six {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 252, 97);
+  transform: scale(1);
+}
+
+#six:hover {
+  transform: scale(5);
+  background-color: black;
+  transition: all ease-in-out 3s;
+}
+
+#seven {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 196, 0);
+}
+
+#seven:hover {
+  animation: circle ease-in-out 6s;
+}
+
+#eight {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 123, 0);
+}
+
+#nine {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 30, 0);
+}
+
+#ten {
+}
+
+@keyframes circle {
+  from {
+    border-radius: 100%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
