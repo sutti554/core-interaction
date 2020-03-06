@@ -19,34 +19,33 @@
         padding: 20px;
         font-size: 16px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        text-transform: uppercase;
         background-color: transparent;
       }
 
       button:hover {
         cursor: pointer;
-        background-color: #333;
-        color: #fff;
+        background-color: grey;
+        color: black;
       }
     </style>
   </head>
   <body>
     <div id="container">
-      <div>orange</div>
-      <div>yellow</div>
-      <div>green</div>
-      <div>blue</div>
-      <div>purple</div>
+      <div id="orange">orange</div>
+      <div id="yellow">yellow</div>
+      <div id="green">green</div>
+      <div id="blue">blue</div>
+      <div id="purple">purple</div>
     </div>
-    <button onClick="handleClick()">Click me!</button>
+    <button onclick="myFunction()">click.</button>
 
-    <!-- script tag at the end of the body -->
     <script>
-      function handleClick() {
-        console.log("this function runs every time you click the button");
-        // Take a look at index-comments.html and index-final.html to get ideas for how you can generate and manipulate content on the screen when this function runs
-        // what if we randomized the images on the screen every time we clicked the button? How would we have to change our in-class code?
-        // Try to do additional things inside here too. Learn how to use style in JavaScript to change colors, typography, etc.
+      function myFunction() {
+        document.getElementById("orange").style.color = "orange";
+        document.getElementById("yellow").style.color = "yellow";
+        document.getElementById("green").style.color = "green";
+        document.getElementById("blue").style.color = "blue";
+        document.getElementById("purple").style.color = "purple";
       }
     </script>
   </body>
