@@ -19,19 +19,12 @@
       font-family: "Anton", sans-serif;
       color: white;
       background-color: black;
-    }
-
-    header {
-      font-size: 8vh;
+      margin: 0px 0px 0px 0px;
     }
 
     img {
       height: 50%;
       width: 50%;
-    }
-
-    nav {
-      font-size: 5vh;
     }
 
     a {
@@ -44,15 +37,48 @@
     }
   </style>
   <body>
-    <header>
+    <img
+      class="mySlides"
+      src="images/photos-03-03/front.JPG"
+      alt="front view"
+    />
+    <img class="mySlides" src="images/photos-03-03/left.png" alt="left view" />
+    <img class="mySlides" src="images/photos-03-03/back.JPG" alt="back view" />
+    <img class="mySlides" src="images/photos-03-03/right.JPG" alt="left view" />
+    <div id="title">
       ISABELLE'S TATTOO ARCHIVE
-    </header>
-    <img src="images/photos-03-03/front.JPG" alt="front view" />
-    <img src="images/photos-03-03/left.JPG" alt="left view" />
-    <img src="images/photos-03-03/back.JPG" alt="back view" />
-    <img src="images/photos-03-03/right.JPG" alt="left view" />
+    </div>
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+      &#10094;
+    </button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
+      &#10095;
+    </button>
     <nav>
       <a href="index3.html">Directory</a>
     </nav>
   </body>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs((slideIndex += n));
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
 </html>

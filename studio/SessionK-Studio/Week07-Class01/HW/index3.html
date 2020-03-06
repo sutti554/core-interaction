@@ -23,71 +23,76 @@
 
     .parent {
       display: grid;
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns: repeat(9, 1fr) minmax(150px, 1fr);
       grid-template-rows: repeat(8, 1fr);
       grid-column-gap: 5px;
       grid-row-gap: 5px;
     }
 
-    .div1 {
+    #div1 {
       grid-area: 1 / 3 / 2 / 8;
     }
-    .div2 {
+
+    #div2 {
       grid-area: 2 / 1 / 5 / 4;
     }
-    .div3 {
-      grid-area: 2 / 6 / 6 / 8;
-    }
-    .div4 {
+
+    #div3 {
       grid-area: 2 / 4 / 6 / 6;
     }
-    .div5 {
+
+    #div4 {
       grid-area: 5 / 2 / 9 / 4;
     }
-    .div6 {
-      grid-area: 2 / 8 / 4 / 10;
+
+    #div5 {
+      grid-area: 2 / 6 / 5 / 9;
     }
-    .div7 {
-      grid-area: 5 / 8 / 9 / 10;
+
+    #div6 {
+      grid-area: 6 / 4 / 9 / 7;
     }
-    .div8 {
-      grid-area: 6 / 5 / 9 / 8;
+
+    #div7 {
+      grid-area: 5 / 7 / 8 / 10;
     }
   </style>
   <body>
     <div class="parent">
-      <div class="div1"><header>DIRECTORY</header></div>
-      <div class="div2"></div>
-      <div class="div3"></div>
-      <div class="div4"></div>
-      <div class="div5"></div>
-      <div class="div6"></div>
-      <div class="div7"></div>
-      <div class="div8"></div>
-    </div>
-    <div>
-      <img src="" alt="" />
-      <a href="index9.html">Olive Branch</a>
-    </div>
-    <div>
-      <img src="" alt="" />
-      <a href="index10.html">Fag</a>
-    </div>
-    <div>
-      <img src="" alt="" />
-      <a href="index11.html">Patience</a>
-    </div>
-    <div>
-      <img src="" alt="" />
-      <a href="index12.html">Palm</a>
-    </div>
-    <div>
-      <img src="" alt="" />
-      <a href="index13.html">Sun</a>
-    </div>
-    <div>
-      <img src="" alt="" />
-      <a href="index14.html">Spider</a>
+      <div id="div1"><header>DIRECTORY</header></div>
+      <div id="div2">
+        <a href="index10.html">
+          <img src="images/Fag/DSC02417.JPG" alt="Fag foot tattoo" />
+        </a>
+      </div>
+      <div id="div3">
+        <a href="index14.html">
+          <img src="images/Spider/DSC02405.JPG" alt="" />
+        </a>
+      </div>
+      <div id="div4">
+        <a href="index13.html">
+          <img src="images/Sun/DSC02400.JPG" alt="" />
+        </a>
+      </div>
+      <div id="div5">
+        <a href="index9.html">
+          <img
+            src="images/Olive-Branch/DSC02398.JPG"
+            alt="Olive branch tattoo"
+          />
+        </a>
+      </div>
+      <div id="div6">
+        <a href="index12.html">
+          <img src="images/Palm/DSC02438.JPG" alt="" />
+        </a>
+      </div>
+      <div id="div7">
+        <a href="index11.html">
+          <img src="images/Patience/DSC02434.JPG" alt="" />
+        </a>
+      </div>
     </div>
   </body>
 </html>
