@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button Starter Code</title>
     <style>
-      /* you can write styles for the button! Try your own */
+      div {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #container {
+        padding: 20px;
+      }
+
       button {
-        padding: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
         font-size: 16px;
-        font-family: monospace;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         text-transform: uppercase;
         background-color: transparent;
       }
+
       button:hover {
         cursor: pointer;
         background-color: #333;
@@ -21,7 +31,13 @@
     </style>
   </head>
   <body>
-    <!-- html content here -->
+    <div id="container">
+      <div>orange</div>
+      <div>yellow</div>
+      <div>green</div>
+      <div>blue</div>
+      <div>purple</div>
+    </div>
     <button onClick="handleClick()">Click me!</button>
 
     <!-- script tag at the end of the body -->
