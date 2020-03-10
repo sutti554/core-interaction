@@ -23,8 +23,8 @@
     }
 
     img {
-      height: 50%;
-      width: 50%;
+      height: 45%;
+      width: 45%;
     }
 
     a {
@@ -34,6 +34,36 @@
 
     a:hover {
       color: yellow;
+    }
+
+    #title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      position: fixed;
+    }
+
+    button {
+      border-radius: 0px;
+      border-color: yellow;
+      background-color: transparent;
+      color: yellow;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+    }
+
+    #nameofpage {
+      font-size: 7vh;
+      padding: 0px 20px 0px 20px;
+    }
+
+    nav {
+      font-size: 3vh;
     }
   </style>
   <body>
@@ -49,15 +79,19 @@
       src="images/photos-03-03/right.png"
       alt="right view"
     />
+
     <div id="title">
-      ISABELLE'S TATTOO ARCHIVE
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <div id="nameofpage">
+        ISABELLE'S TATTOO ARCHIVE
+      </div>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
+        &#10095;
+      </button>
     </div>
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
-      &#10094;
-    </button>
-    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
-      &#10095;
-    </button>
+
     <nav>
       <a href="index3.html">Directory</a>
     </nav>
