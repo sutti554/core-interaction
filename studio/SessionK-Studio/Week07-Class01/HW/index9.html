@@ -19,48 +19,107 @@
 
     header {
       font-size: 9vh;
-      padding: 3vh 0vh 0vh 4vh;
+    }
+
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      margin: 30px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 6;
+    }
+    .div2 {
+      grid-area: 2 / 3 / 6 / 6;
+      background-color: white;
+    }
+    .div3 {
+      grid-area: 6 / 4 / 11 / 6;
+      background-color: white;
+    }
+    .div4 {
+      grid-area: 2 / 1 / 6 / 3;
+      background-color: white;
+    }
+    .div5 {
+      grid-area: 6 / 2 / 11 / 4;
+      background-color: white;
+    }
+    .div6 {
+      grid-area: 6 / 1 / 9 / 2;
+      background-color: white;
+    }
+    .div7 {
+      grid-area: 1 / 8 / 2 / 9;
+    }
+    .div8 {
+      grid-area: 2 / 6 / 11 / 9;
     }
 
     #info-container {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      font-size: 3vh;
     }
 
-    img {
-      height: 30%;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
+    li {
+      list-style-type: none;
+    }
+
+    p {
+      font-size: 2.5vh;
+      text-align: justify;
+      margin: 15px;
     }
   </style>
   <body>
-    <header>Olive Branch</header>
-    <div id="info-container">
-      <ul>
-        <li>
-          Artist
-          <a href="https://instagram.com/nataletattoo?igshid=1vwkr6sbmu0u1"
-            >@nataletattoo</a
-          >
-        </li>
-        <li>
-          Studio
-          <a href="https://www.havefunbeluckytattoo.com/"
-            >Have Fun Be Lucky Tattoo</a
-          >
-        </li>
-        <li>Cost: $250</li>
-        <li>Bodypart: Ankle</li>
-        <li>Year: 2018</li>
-        <li>Description</li>
-      </ul>
+    <div class="parent">
+      <div class="div1"><header>OLIVE BRANCH</header></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div6"></div>
+      <div class="div8">
+        <div id="info-container">
+          <p id="one">
+            Artist
+            <a href="https://instagram.com/nataletattoo?igshid=1vwkr6sbmu0u1"
+              >@nataletattoo</a
+            >
+            <br />
+            Studio
+            <a href="https://www.havefunbeluckytattoo.com/"
+              >Have Fun Be Lucky Tattoo</a
+            >
+            <br />
+            Cost: $250 <br />
+            Bodypart: Ankle <br />
+            Year: 2018 <br />
+          </p>
+          <p id="two">
+            Description <br />
+            This was my first ever tattoo and I got it as soon as I turned 18. I
+            grew up being a big fan of tattoos as my uncle was covered and my
+            brother had some too. As an artistic person, tattoos are not only
+            art to me but a form of self-expression. To me, tattoos are my
+            documentation of my values and an everyday reminder of what I
+            believe in. As most people know, an olive branch represents peace
+            and for me, I have always heavily identified with this and
+            non-confrontation. It is a reminder to live life in a relaxed way
+            and stay true to who I am. The experience was meaningful to me as
+            becoming an adult and being bold. I did not care what anyone would
+            think of it because the tattoo is for me and no one else.
+          </p>
+        </div>
+      </div>
+      <div class="div7">
+        <button>
+          <a href="index.html">HOME</a>
+        </button>
+      </div>
     </div>
-    <img
-      src="images/Olive-Branch/D8CDDFF2-628B-4672-94BF-22D21EF9B8CE.jpeg"
-      alt=""
-    />
-    <img src="images/Olive-Branch/IMG_1549.jpg" alt="" />
   </body>
 </html>
