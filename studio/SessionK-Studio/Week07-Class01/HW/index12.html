@@ -19,36 +19,103 @@
 
     header {
       font-size: 9vh;
-      padding: 3vh 0vh 0vh 4vh;
     }
 
-    img {
-      height: 30%;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      margin: 30px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 6;
+    }
+    .div2 {
+      grid-area: 2 / 3 / 6 / 6;
+      background-color: white;
+    }
+    .div3 {
+      grid-area: 6 / 4 / 11 / 6;
+      background-color: white;
+    }
+    .div4 {
+      grid-area: 2 / 1 / 6 / 3;
+      background-color: white;
+    }
+    .div5 {
+      grid-area: 6 / 2 / 11 / 4;
+      background-color: white;
+    }
+    .div6 {
+      grid-area: 6 / 1 / 9 / 2;
+      background-color: white;
+    }
+    .div7 {
+      grid-area: 1 / 8 / 2 / 9;
+    }
+    .div8 {
+      grid-area: 2 / 6 / 11 / 9;
+    }
+
+    #info-container {
+      font-size: 3vh;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    p {
+      font-size: 2.5vh;
+      text-align: justify;
+      margin: 15px;
     }
   </style>
   <body>
-    <header>Palm</header>
-    <img src="" alt="" />
-    <ul>
-      <li>
-        Artist
-        <a href="https://instagram.com/tinedefiore?igshid=wu1xpka9h9dt"
-          >@tinedefiore</a
-        >
-      </li>
-      <li>
-        Studio
-        <a href="https://www.blackoakchicago.com/">Black Oak Tattoo</a>
-      </li>
-      <li>Cost: $20 flash</li>
-      <li>Bodypart: Ankle</li>
-      <li>Year: 2019</li>
-      <li>Description</li>
-    </ul>
-    <img src="images/Palm/A746D97E-CCB2-4B2C-9480-04C6BED8D93E.jpeg" alt="" />
-    <img src="images/Palm/IMG_6283.jpg" alt="" />
+    <div class="parent">
+      <div class="div1"><header>PALM</header></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div6"></div>
+      <div class="div8">
+        <div id="info-container">
+          <p id="one">
+            Artist:
+            <a href="https://instagram.com/tinedefiore?igshid=wu1xpka9h9dt"
+              >@tinedefiore</a
+            >
+            <br />
+            Studio:
+            <a href="https://www.blackoakchicago.com/">Black Oak Tattoo</a>
+            <br />
+            Cost: $20 flash<br />
+            Bodypart: Ankle <br />
+            Year: 2019 <br />
+          </p>
+          <p id="two">
+            Description <br />
+            This was my first ever flash tattoo and is how I discovered Bandit
+            Studio. One of my all-time favorite artists is Tine and I had been
+            following her work for a long time. She works in Chicago so it would
+            be a very expensive trip just to get a tattoo by her. BUT, she came
+            to New York for a flash day and I got the opportunity to get
+            something done by her. Although it is very small, it means so much
+            to me to have at least a little ink by my favorite artist. One day I
+            will get the money to make the trip to get something big done by her
+            but for now, it was totally worth it.
+          </p>
+        </div>
+      </div>
+      <div class="div7">
+        <button>
+          <a href="index.html">HOME</a>
+        </button>
+      </div>
+    </div>
   </body>
 </html>

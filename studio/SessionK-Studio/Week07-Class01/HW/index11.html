@@ -19,33 +19,93 @@
 
     header {
       font-size: 9vh;
-      padding: 3vh 0vh 0vh 4vh;
     }
 
-    img {
-      height: 30%;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      margin: 30px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 6;
+    }
+    .div2 {
+      grid-area: 2 / 3 / 6 / 6;
+      background-color: white;
+    }
+    .div3 {
+      grid-area: 6 / 4 / 11 / 6;
+      background-color: white;
+    }
+    .div4 {
+      grid-area: 2 / 1 / 6 / 3;
+      background-color: white;
+    }
+    .div5 {
+      grid-area: 6 / 2 / 11 / 4;
+      background-color: white;
+    }
+    .div6 {
+      grid-area: 6 / 1 / 9 / 2;
+      background-color: white;
+    }
+    .div7 {
+      grid-area: 1 / 8 / 2 / 9;
+    }
+    .div8 {
+      grid-area: 2 / 6 / 11 / 9;
+    }
+
+    #info-container {
+      font-size: 3vh;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    p {
+      font-size: 2.5vh;
+      text-align: justify;
+      margin: 15px;
     }
   </style>
   <body>
-    <header>Patience</header>
-    <img src="" alt="" />
-    <ul>
-      <li>Artist: Han</li>
-      <li>Studio: Stuy Dorm</li>
-      <li>Cost: Free</li>
-      <li>Bodypart: Above the knee</li>
-      <li>Year: 2019</li>
-      <li>Description</li>
-    </ul>
-    <img
-      src="images/Patience/D68EF2D4-5AAF-48F0-876A-D37B41BFCC20.jpeg"
-      alt=""
-    />
-    <img src="images/Patience/IMG_4684.jpg" alt="" />
-    <img src="images/Patience/IMG_4687.jpg" alt="" />
-    <img src="images/Patience/IMG_4688.jpg" alt="" />
+    <div class="parent">
+      <div class="div1"><header>PATIENCE</header></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div6"></div>
+      <div class="div8">
+        <div id="info-container">
+          <p id="one">
+            Artist: Han <br />
+            Studio: Stuy Dorm <br />
+            Cost: Free <br />
+            Bodypart: Above the knee <br />
+            Year: 2019 <br />
+          </p>
+          <p id="two">
+            Description <br />
+            This is yet another stick n’ poke my good friend Han did for me. I
+            have always been a fairly patient person and I never want to lose
+            that quality. Being impatient is such an uncomfortable feeling and
+            this tattoo is facing right at me so I never forget to breathe and
+            just take things one step at a time.
+          </p>
+        </div>
+      </div>
+      <div class="div7">
+        <button>
+          <a href="index.html">HOME</a>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
