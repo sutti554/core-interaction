@@ -19,35 +19,116 @@
 
     header {
       font-size: 9vh;
-      padding: 3vh 0vh 0vh 4vh;
     }
 
-    img {
-      height: 30%;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      margin: 30px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 6;
+    }
+    .div2 {
+      grid-area: 2 / 3 / 6 / 6;
+      background-color: white;
+    }
+    .div3 {
+      grid-area: 6 / 4 / 11 / 6;
+      background-color: white;
+    }
+    .div4 {
+      grid-area: 2 / 1 / 6 / 3;
+      background-color: white;
+    }
+    .div5 {
+      grid-area: 6 / 2 / 11 / 4;
+      background-color: white;
+    }
+    .div6 {
+      grid-area: 6 / 1 / 9 / 2;
+      background-color: white;
+    }
+    .div7 {
+      grid-area: 1 / 8 / 2 / 9;
+    }
+    .div8 {
+      grid-area: 2 / 6 / 11 / 9;
+    }
+
+    #info-container {
+      font-size: 3vh;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    p {
+      font-size: 2.5vh;
+      text-align: justify;
+      margin: 15px;
     }
   </style>
   <body>
-    <header>Fag</header>
-    <ul>
-      <li>Artist: Han</li>
-      <li>Studio: Stuy Dorm</li>
-      <li>Cost: Free</li>
-      <li>Bodypart: Bottom of the foot</li>
-      <li>Year: 2018</li>
-      <li>Description</li>
-    </ul>
-    <img src="images/Fag/B12FA22E-D26A-4490-9564-F0C127EE2240.jpeg" alt="" />
-    <img src="images/Fag/DSC02239.jpg" alt="" />
-    <img src="images/Fag/DSC02244.jpg" alt="" />
-    <img src="images/Fag/DSC02254.jpg" alt="" />
-    <img src="images/Fag/DSC02269.jpg" alt="" />
-    <img src="images/Fag/DSC02282.jpg" alt="" />
-    <img src="images/Fag/DSC02286.jpg" alt="" />
-    <img src="images/Fag/DSC02288.jpg" alt="" />
-    <img src="images/Fag/DSC02291.jpg" alt="" />
-    <img src="images/Fag/DSC022992.jpg" alt="" />
+    <div class="parent">
+      <div class="div1"><header>FAG</header></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div6"></div>
+      <div class="div8">
+        <div id="info-container">
+          <p id="one">
+            Artist: Han <br />
+            Studio: Stuy Dorm <br />
+            Cost: Free <br />
+            Bodypart: Bottom of the foot <br />
+            Year: 2018 <br />
+          </p>
+          <p id="two">
+            Description <br />
+            Most people get tattoos for themselves even if in honor of another
+            person or thing. It is rare a tattoo fulfills a practical purpose or
+            a means of completing a college project. I had a professor give us a
+            project where we were to find an artist that inspired us and create
+            a piece inspired by the artist’s work. Through some research, I came
+            across Catherine Opie and fell in love with her photography but more
+            importantly, her subjects and concepts. Throughout much of her work,
+            the theme of queerness dominates the forefront especially the
+            concept of butch lesbians. I was inspired by her piece
+            <a href="https://www.guggenheim.org/artwork/12200">Dyke (1993)</a>
+            to reflect on my own queer experience and the impact of language.
+            Opie’s aim with this piece was to take away the power given to words
+            such as “dyke” and how a tattoo is one of the most permanent and
+            extreme ways to label one’s self in this manner. I consider myself
+            highly lucky and am deeply grateful for the people I have in my life
+            and how they welcomed my coming out and queer relationships. I am in
+            a very privileged position and have always felt empowered by the
+            word “fag” and have never let it bother me. However, there was a boy
+            from my high school who commented “faggy” on a post of me and a girl
+            I was dating at the time. It didn’t bother me too much but it made
+            me realize there is still a cultural realm where people are still
+            trying to bring queer people down. I decided to get “Fag” tattooed
+            on my foot as a representation of a label I am not ashamed of. My
+            good friend did it with a stick n’ poke method and it was a very
+            special experience being surrounded by my friends who love and
+            accept me and willing to help me no matter what. I don’t know if I
+            would have gotten the tattoo without having gotten the assignment
+            but none the less it is one of my most personal tattoos.
+          </p>
+        </div>
+      </div>
+      <div class="div7">
+        <button>
+          <a href="index.html">HOME</a>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
