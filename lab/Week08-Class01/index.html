@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 7 HW</title>
+    <style>
+      /* standard reset */
+      html,
+      body {
+        padding: 0;
+        margin: 30px;
+        box-sizing: border-box;
+      }
+
+      /* we can style the select element, too. (not the "options" dropdown, through) */
+      select {
+        font-family: monospace;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      select:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #333;
+        transition: 0.25s all ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Week 7 Dropdown Homework (due March 13)</h1>
+
+    <select id="mySelect" onchange="setColor()">
+      <option disabled selected>Background Color</option>
+      <option value="pink">Pink</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+
+    <div id="container">
+      <!-- if you are adding content to HTML, add it here -->
+    </div>
+
+    <script>
+      // handleChange() function that runs onchange
+      setColor = function(val) {
+        var e = document.getElementById("mySelect");
+        document.body.style.backgroundColor = e.options[e.selectedIndex].value;
+      };
+      // 1. inside your function, get the value of the selected item in the dropdown onchange and save to variable
+      // hint: event.target.value
+      //
+      // 2. do SOMETHING with this value.
+      // // ideas: update the styling of an element you put on the page (color, font-size, background image).
+      // // Or try to some element to the screen based on dropdown value (image, text, audio, etc.)
+      //
+      // challenge: try to filter an array like in the in-class example!!
+    </script>
+  </body>
+</html>
