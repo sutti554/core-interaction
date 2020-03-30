@@ -1,62 +1,37 @@
 const DATA = [
   {
-    year: '2004',
-    title: 'This is a test title',
-    image: 'https://picsum.photos/600/400'
+    year: "2018",
+    title: "This is a test title",
+    image: "march10-images/DSC_0107.JPG"
   },
   {
-    year: '2005',
-    title: 'This is a test title 2',
-    image: 'https://picsum.photos/600/400'
+    year: "2018",
+    title: "This is a test title 2",
+    image: "march10-images/DSC_0110.JPG"
   },
   {
-    year: '1990',
-    title: 'This is a test title 3',
-    image: 'https://picsum.photos/600/400'
+    year: "2019",
+    title: "This is a test title 3",
+    image: "march10-images/DSC_0098.JPG"
   },
   {
-    year: '2018',
-    title: 'This is a test title 4',
-    image: 'https://picsum.photos/600/400'
+    year: "2019",
+    title: "This is a test title 4",
+    image: "march10-images/DSC_0101.JPG"
   },
   {
-    year: '2005',
-    title: 'This is a test title 2',
-    image: 'https://picsum.photos/600/400'
+    year: "2019",
+    title: "This is a test title 2",
+    image: "march10-images/DSC_0100.JPG"
   },
   {
-    year: '1990',
-    title: 'This is a test title 3',
-    image: 'https://picsum.photos/600/400'
-  },
-  {
-    year: '2018',
-    title: 'This is a test title 4',
-    image: 'https://picsum.photos/600/400'
-  },
-  {
-    year: '2018',
-    title: 'This is a test title 4',
-    image: 'https://picsum.photos/600/400'
-  },
-  {
-    year: '2005',
-    title: 'This is a test title 2',
-    image: 'https://picsum.photos/600/400'
-  },
-  {
-    year: '1990',
-    title: 'This is a test title 3',
-    image: 'https://picsum.photos/600/400'
-  },
-  {
-    year: '2018',
-    title: 'This is a test title 4',
-    image: 'https://picsum.photos/600/400'
-  },
+    year: "2020",
+    title: "This is a test title 3",
+    image: "march10-images/DSC_0092.JPG"
+  }
 ];
 
-if(document.getElementById('timeline')) {
-  let timeline = new Timeline('timeline', DATA);
+if (document.getElementById("timeline")) {
+  let timeline = new Timeline("timeline", DATA);
   timeline.init();
 }
