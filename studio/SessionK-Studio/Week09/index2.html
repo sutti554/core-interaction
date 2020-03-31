@@ -8,117 +8,84 @@
       href="https://fonts.googleapis.com/css?family=Anton&display=swap"
       rel="stylesheet"
     />
-    <title>Gallery</title>
+    <title>gallery</title>
   </head>
   <style>
+    [aria-label="gallery"] {
+      border-width: 6px;
+      border-style: double;
+      padding: 1rem;
+      overflow-x: scroll;
+    }
+
+    [aria-label="gallery"]:focus {
+      outline-offset: -6px;
+    }
+
+    [aria-label="gallery"] ul {
+      white-space: nowrap;
+    }
+
+    [aria-label="gallery"] li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    [aria-label="gallery"] img {
+      max-height: 60vh;
+    }
+
+    /* just page styles */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: yellow;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       font-family: "Anton", sans-serif;
-      color: white;
-      margin: 0px 0px 0px 0px;
-    }
-
-    img {
-      height: 45%;
-      width: 45%;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-
-    a:hover {
+      margin: 3rem auto;
+      max-width: 95vw;
+      padding: 1rem;
       color: yellow;
+      background-color: black;
+      font-size: 4vh;
     }
 
-    #title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      position: fixed;
-    }
-
-    button {
-      border-radius: 0px;
-      border-color: yellow;
-      background-color: transparent;
-      color: yellow;
-    }
-
-    button:hover {
-      background-color: white;
-      color: black;
-      border-color: black;
-    }
-
-    #nameofpage {
-      font-size: 8vh;
-      padding: 0px 20px 0px 20px;
-    }
-
-    nav {
-      font-size: 3vh;
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
     }
   </style>
   <body>
-    <img
-      class="mySlides"
-      src="images/march10-images/DSC_0107.JPG"
-      alt="Olive Branch"
-    />
-    <img class="mySlides" src="images/march10-images/DSC_0110.JPG" alt="Fag" />
-    <img
-      class="mySlides"
-      src="images/march10-images/DSC_0098.JPG"
-      alt="Patience"
-    />
-    <img class="mySlides" src="images/march10-images/DSC_0101.JPG" alt="Palm" />
-    <img class="mySlides" src="images/march10-images/DSC_0100.JPG" alt="Sun" />
-    <img
-      class="mySlides"
-      src="images/march10-images/DSC_0092.JPG"
-      alt="Spider"
-    />
-
-    <div id="title">
-      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
-        &#10094;
-      </button>
-      <div id="nameofpage">
-        GALLERY
-      </div>
-      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
-        &#10095;
-      </button>
+    <h1>GALLERY</h1>
+    <div
+      role="region"
+      aria-label="gallery"
+      tabindex="0"
+      aria-describedby="instructions"
+    >
+      <ul>
+        <li>
+          <img src="march10-images/DSC_0107.JPG" alt="Olive Branch" />
+        </li>
+        <li>
+          <img src="march10-images/DSC_0110.JPG" alt="Fag" />
+        </li>
+        <li>
+          <img src="march10-images/DSC_0098.JPG" alt="Patience" />
+        </li>
+        <li>
+          <img src="march10-images/DSC_0101.JPG" alt="Palm" />
+        </li>
+        <li>
+          <img src="march10-images/DSC_0100.JPG" alt="Sun" />
+        </li>
+        <li>
+          <img src="march10-images/DSC_0092.JPG" alt="Spider" />
+        </li>
+      </ul>
     </div>
   </body>
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs((slideIndex += n));
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = x.length;
-      }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-  </script>
 </html>
