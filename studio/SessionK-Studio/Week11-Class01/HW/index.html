@@ -12,13 +12,17 @@
   </head>
   <style>
     #container {
-      margin-top: -350px;
+      margin-top: -600px;
       margin-left: -590px;
     }
     p {
       font-family: "Nanum Myeongjo", serif;
       font-weight: 700;
       font-size: 50px;
+      line-height: 70px;
+    }
+    mark {
+      background-color: black;
     }
     button {
       font-size: 100%;
@@ -26,6 +30,10 @@
       font-weight: 800;
       border: 0em;
       padding: 0em;
+      background-color: black;
+    }
+    button:focus {
+      outline: 0;
     }
     #fading {
       color: rgb(228, 1, 1);
@@ -34,7 +42,7 @@
   <body>
     <div id="container">
       <p>
-        <span class="blackout">
+        <mark>
           And yet (this was the murky part, this was what bothered me) there had
           also <br />
           been other, way more confusing and fucked-up nights, grappling around
@@ -54,24 +62,28 @@
           incoherence of backlit flickers, choppy and poorly lit like some
           experimental <br />
           film, the unfamiliar twist of Boris’s features
-        </span>
-        <button id="fading">fading</button>
-        <span class="blackout">
+        </mark>
+        <button id="fading">fading</button
+        ><!--
+         --><mark>
           from memory already <br />
           and none of it with any more bearing on our actual lives than a
-        </span>
-        <button id="dream">dream</button>
-        <span class="blackout">
+        </mark>
+        <button id="dream">dream</button
+        ><!--
+        --><mark>
           . We <br />
           never spoke of it; it wasn’t quite real; getting
-        </span>
-        <button id="ready">ready</button>
-        <span class="blackout">
+        </mark>
+        <button id="ready">ready</button
+        ><!--
+        --><mark>
           for school we threw shoes, <br />
           splashed water at each other, chewed aspirin
-        </span>
-        <button id="for">for</button>
-        <span class="blackout">
+        </mark>
+        <button id="for">for</button
+        ><!--
+         --><mark>
           our hangovers, laughed and <br />
           joked around all the way to the bus stop. I knew people would think
           the wrong <br />
@@ -82,21 +94,19 @@
           fairly sure it was just a laugh, nothing to take too seriously or get
           worked up <br />
           about. And yet more than once, I had wondered if I should step up
-        </span>
-        <button id="nerve">my nerve</button> <br />
-        <span class="blackout">
+        </mark>
+        <button id="nerve">my nerve</button> <br /><!--
+        --><mark>
           and say something; draw some kind of line, make things clear, just to
           make <br />
           absolutely sure he didn’t have the wrong idea. But the moment had
           never come.
-        </span>
+        </mark>
       </p>
     </div>
     <script>
       document.getElementById("fading").onclick = function () {
         document.getElementById("dream").style.color = "rgb(228, 1, 1)";
-        document.getElementsByClassName("blackout").style.backgroundColor =
-          "black";
       };
 
       document.getElementById("dream").onclick = function () {
