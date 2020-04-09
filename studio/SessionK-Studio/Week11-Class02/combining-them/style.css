@@ -42,9 +42,6 @@
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  html {
-    display: inline-block;
-  }
   #container 1 {
     display: none;
   }
@@ -55,7 +52,6 @@
   p {
     word-break: keep-all;
     line-break: initial;
-
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
     font-size: 50px;
