@@ -1,41 +1,40 @@
 /* -------Laptop CSS------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) {
-  #container1 {
-    height: 1500px;
-    width: 2800px;
-    position: fixed;
-    overflow: scroll;
-    margin-top: -590px;
-    margin-left: -600px;
-  }
 
-  #container2 {
-    display: none;
-  }
+#container1 {
+  height: 1500px;
+  width: 2800px;
+  position: fixed;
+  overflow: scroll;
+  margin-top: -590px;
+  margin-left: -600px;
+}
 
-  p {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 70px;
-  }
-  mark {
-    background-color: black;
-  }
-  button {
-    font-size: 100%;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 800;
-    border: 0em;
-    padding: 0em;
-    background-color: black;
-  }
-  button:focus {
-    outline: 0;
-  }
-  #fading {
-    color: rgb(228, 1, 1);
-  }
+#container2 {
+  display: none;
+}
+
+p {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+mark {
+  background-color: black;
+}
+button {
+  font-size: 100%;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  border: 0em;
+  padding: 0em;
+  background-color: black;
+}
+button:focus {
+  outline: 0;
+}
+#fading {
+  color: rgb(228, 1, 1);
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */

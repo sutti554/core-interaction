@@ -1,0 +1,10 @@
+#container {
+    height: 1500px;
+    width: 2800px;
+  }
+  
+  p {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 50px;
+  }
