@@ -110,15 +110,11 @@
 /* Landscape */
 @media only screen and (min-device-width: 370px) and (max-device-width: 670px) {
   img {
-    height: 200px;
-    margin-top: 220px;
+    height: 150px;
+    margin-top: 250px;
   }
-      
+  
   p {
-   /* display: none; */
-  }
-
-  .poem {
-    color: rgb(211, 1, 1);
+    display: none;
   }
 }
