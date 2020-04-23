@@ -115,7 +115,10 @@
   }
       
   p {
-   display: none;
+   /* display: none; */
   }
 
+  .poem {
+    color: rgb(211, 1, 1);
+  }
 }
