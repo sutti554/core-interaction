@@ -1,0 +1,64 @@
+html {
+    background-color: black;
+}
+#container {
+    height: 1500px;
+    width: 2800px;
+    margin: 0px 40px 60px 40px;
+  }
+  
+  p {
+      color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 80px;
+  }
+
+  .highlight {
+    font-weight: 800;
+    color: rgb(211, 1, 1);
+  }
+
+@media  only screen and (min-device-width: 1200px) {
+  img {
+    display: none;
+  }
+ }
+
+/* ----------- iPad ----------- */
+/* ---Landscape--- */
+@media only screen and (min-device-width: 1000px) and (orientation: Landscape) {
+  img {
+    display: none;
+  }
+}
+/* ---Portrait--- */
+@media only screen and (min-device-width: 750px) and (max-device-width: 1000px) and (orientation: Portrait) {
+  img {
+    display: none;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Landscape */
+@media only screen and (min-device-width: 370px) and (max-device-width: 670px) {
+
+  /* #container {
+    height: 1500px;
+    width: 2800px;
+    margin: 0px 0px 60px 40px;
+  } */
+  
+  img {
+    height: 200px;
+    /* display: block; */
+    margin-left: 125px;
+    margin-top: 300px;
+  }
+      
+  p {
+   display: none;
+  }
+
+}
