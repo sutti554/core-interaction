@@ -1,0 +1,70 @@
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0px 0px 0px;
+}
+
+.box {
+    color: transparent;
+}
+
+
+@media  only screen and (min-device-width: 1200px) {
+    #bitch {
+        display: hide;
+    }
+    
+    #bitchier {
+        display: hide;
+    }
+    
+    #bitchiest {
+        font-family: 'Pinyon Script', cursive;
+        font-size: 85px;
+        color: black;
+    }
+
+   }
+  
+  /* ----------- iPad ----------- */
+  /* ---Portrait--- */
+  @media only screen and (min-device-width: 750px) and (max-device-width: 1000px) and (orientation: Portrait) {
+    #container {
+        background-color: rgb(235, 88, 113);
+    }
+
+    #bitch {
+        display: hide;
+    }
+    
+    #bitchier {
+       
+        font-family: 'Mountains of Christmas', cursive;
+        font-size: 60px;
+        color: black;
+    }
+    
+    #bitchiest {
+       display: hide;
+    }
+
+  }
+  
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+  @media only screen and (min-device-width: 370px) and (max-device-width: 670px) {
+    #bitch {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        color: black;
+    }
+    
+    #bitchier {
+        display: hide;
+    }
+    
+    #bitchiest {
+       display: hide;
+    }
+  }
