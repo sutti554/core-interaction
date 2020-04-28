@@ -1,0 +1,120 @@
+  html {
+    background-color: black;
+  }
+
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #partone {
+    color: black;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 40px;
+  }
+
+  #partone:hover .poem {
+    color: rgb(211, 1, 1);
+  }
+
+  #parttwo {
+    color: black;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 33px;
+    margin: 0px;
+  }
+
+  #parttwo:hover .poem {
+    color: rgb(211, 1, 1);
+  }
+
+  #partthree {
+    color: black;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 33px;
+    margin: 0px;
+  }
+
+  #partthree:hover .poem {
+    color: rgb(211, 1, 1);
+  }
+
+@media  only screen and (min-device-width: 1200px) {
+  img {
+    display: none;
+  }
+ }
+
+/* ----------- iPad ----------- */
+/* ---Landscape--- */
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1100px)and (orientation: Landscape) {
+  img {
+    display: none;
+  }
+  p {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  #partone {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  #parttwo {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  #partthree {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .highlight {
+    font-weight: 800;
+    color: rgb(211, 1, 1);
+  }
+}
+/* ---Portrait--- */
+@media only screen and (min-device-width: 750px) and (max-device-width: 1000px) and (orientation: Portrait) {
+  img {
+    display: none;
+  }
+  p {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 80px;
+  }
+  .highlight {
+    font-weight: 800;
+    color: rgb(211, 1, 1);
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Landscape */
+@media only screen and (min-device-width: 370px) and (max-device-width: 670px) {
+  img {
+    height: 150px;
+    margin-top: 250px;
+  }
+  
+  p {
+    display: none;
+  }
+}
