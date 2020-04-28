@@ -9,39 +9,15 @@
     flex-direction: column;
   }
 
-  #partone {
-    color: black;
+  p {
+    color: white;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
     font-size: 33px;
     margin-top: 40px;
   }
 
-  #partone:hover .poem {
-    color: rgb(211, 1, 1);
-  }
-
-  #parttwo {
-    color: black;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 33px;
-    margin: 0px;
-  }
-
-  #parttwo:hover .poem {
-    color: rgb(211, 1, 1);
-  }
-
-  #partthree {
-    color: black;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 33px;
-    margin: 0px;
-  }
-
-  #partthree:hover .poem {
+  p:hover .highlight {
     color: rgb(211, 1, 1);
   }
 
@@ -58,30 +34,13 @@
     display: none;
   }
   p {
-    color: white;
+    color: black;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 90px;
   }
-  #partone {
-    color: white;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 25px;
-  }
-  #parttwo {
-    color: white;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 25px;
-  }
-  #partthree {
-    color: white;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-size: 25px;
-  }
+
   .highlight {
     font-weight: 800;
     color: rgb(211, 1, 1);
@@ -109,12 +68,13 @@
 
 /* Landscape */
 @media only screen and (min-device-width: 370px) and (max-device-width: 670px) {
+  #container {
+    position: relative;
+  }
   img {
+    position: absolute;
     height: 150px;
-    margin-top: 250px;
+    /* margin-top: 250px; */
   }
   
-  p {
-    display: none;
-  }
 }
